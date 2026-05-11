@@ -4,7 +4,7 @@
     --color2:#000000;
     --color3:#5ec3e5;
     --color4:#0bd330;
-    --colorLinear:linear-gradient(rgb(4, 0, 255), rgb(0, 136, 255));
+    --color5:#5900ff; 
     --fontFamily:"Cascadia Code",sans-serif;
 }
 
@@ -51,7 +51,8 @@ body{
     text-align:center;
     margin-top:100px;
     text-transform:uppercase;
-    background:var(--colorLinear);
+    font-family:none;
+    background:var(--color5);
     -webkit-text-fill-color:transparent;
     background-clip:text;
     animation: efeito 1s ease-in-out;
@@ -145,7 +146,7 @@ header nav ul li a:hover{
     background:var(--color1);
     border-radius:20px;
     overflow:hidden;
-    border:2px solid var(--color3);
+    border:2px solid var(--color5);
     box-shadow:0 5px 15px rgba(0,0,0,0.15);
     width:100%;
     max-width:300px;
@@ -178,6 +179,7 @@ header nav ul li a:hover{
     justify-content:space-between;
     flex:1;
     text-align:center;
+    font-family:'Poppins', sans-serif;
 }
 
 /* Título */
@@ -192,16 +194,28 @@ header nav ul li a:hover{
 .preco-antigo{
     font-size:1rem;
     color:gray;
-    text-decoration:line-through;
     margin-bottom:8px;
     font-family:Arial, sans-serif;
 }
+.preco-antigo span{
+    padding:5px;
+    font-size:1.1rem;
+    text-decoration:line-through;
+    text-decoration-color: red;
+}
 /* preço atual */
 .preco{
+    margin:5px;
     font-size:2rem;
     color:red;
     font-weight:bold;
     font-family:'Poppins', sans-serif;
+}
+.preco span{
+    padding:5px;
+    font-size:1.2rem;
+    font-weight:50;
+    color:var(--color4);
 }
 
 /* Botão */
@@ -228,6 +242,7 @@ header nav ul li a:hover{
     background:var(--colorLinear);
 }
 #texto{
+    gap:30px;
     font-size:3rem;
     text-align:center;
     margin-top:100px;
@@ -237,14 +252,26 @@ header nav ul li a:hover{
     -webkit-text-fill-color:transparent;
     background-clip:text;
 }
+#texto2{
+    font-size:2rem;
+    text-align:center;
+    margin-top:50px;
+    font-family:none;
+    text-transform:uppercase;
+    background:var(--color5);
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
 
 footer{
     background:var(--color3);
     color:var(--color2);
-    padding:20px;
+    padding:1.5rem;
     display:flex;
     justify-content:space-between;
+    font-weight:700;
     align-items:center;
+    box-shadow:0 10px 10px rgba(0,0,0,0.6);
 }
 
 /* Responsividade menu hamburguer */
