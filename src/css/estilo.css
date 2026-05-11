@@ -282,6 +282,29 @@ header nav ul li a:hover{
     -webkit-text-fill-color:transparent;
     background-clip:text;
 }
+.textoSobre{
+    gap:30px;
+    font-size:3rem;
+    text-align:center;
+    margin-top:20px;
+    font-family:none;
+    text-transform:uppercase;
+    background:var(--color4);
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+#sobre{
+    padding: 20px;
+    background:var(--color1);
+    border-radius:20px;
+    overflow:hidden;
+    border:2px solid var(--color5);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    gap:20px;
+    font-size:1.3rem;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+}
 
 footer{
     background:var(--color3);
