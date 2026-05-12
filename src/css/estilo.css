@@ -348,20 +348,39 @@ input[type="email"] {
     height: 30px;
 }
 
-footer{
-    background:var(--color3);
-    color:var(--color2);
-    padding:1.5rem;
-    display:flex;
-    justify-content:space-between;
-    font-weight:700;
-    align-items:center;
-    box-shadow:0 10px 10px rgba(0,0,0,0.6);
+footer {
+    background: var(--color3);
+    border-top: 2px solid var(--color4);
+    margin-top: 60px;
+    padding: 40px 10%;
 }
-footer #logo{
-    width:70px;
-    height:70px;
-    border-radius:50px;
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.footer-coluna h4 {
+    color: var(--color1);
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.footer-coluna p {
+    color: var(--color1);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-copy {
+    text-align: center;
+    color: var(--colorBackgroundAlt);
+    font-size: 0.85rem;
+    border-top: 1px solid #444;
+    padding-top: 20px;
 }
 
 /* Responsividade menu hamburguer */
